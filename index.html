@@ -1,328 +1,115 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Партия народа</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&display=swap" rel="stylesheet">
+<title>Партия Народа</title>
 
-    <style>
+<link rel="stylesheet" href="css/style.css">
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Montserrat,sans-serif;
-    background:#ffffff;
-    color:#222;
-}
-
-/* ================= MENU ================= */
-
-header{
-
-position:fixed;
-top:0;
-left:0;
-width:100%;
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-padding:20px 8%;
-
-background:rgba(11,93,59,.88);
-
-backdrop-filter:blur(15px);
-
-z-index:999;
-
-}
-
-.logo{
-
-font-size:26px;
-font-weight:800;
-color:white;
-
-}
-
-nav a{
-
-color:white;
-text-decoration:none;
-
-margin-left:35px;
-
-font-weight:600;
-
-transition:.3s;
-
-}
-
-nav a:hover{
-
-color:#9be7a3;
-
-}
-
-/* ================= HERO ================= */
-
-.hero{
-
-height:100vh;
-
-background:
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1800&q=80");
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-
-color:white;
-
-padding:20px;
-
-}
-
-.hero h1{
-
-font-size:70px;
-
-margin-bottom:20px;
-
-animation:fadeUp 1s;
-
-}
-
-.hero p{
-
-font-size:24px;
-
-margin-bottom:40px;
-
-animation:fadeUp 1.5s;
-
-}
-
-.buttons{
-
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-
-}
-
-.btn{
-
-padding:16px 38px;
-
-border-radius:50px;
-
-text-decoration:none;
-
-font-weight:700;
-
-transition:.35s;
-
-}
-
-.green{
-
-background:#0B5D3B;
-
-color:white;
-
-}
-
-.green:hover{
-
-transform:translateY(-5px);
-
-background:#15834f;
-
-}
-
-.white{
-
-background:white;
-
-color:#0B5D3B;
-
-}
-
-.white:hover{
-
-transform:translateY(-5px);
-
-}
-
-/* ================= ABOUT ================= */
-
-section{
-
-padding:100px 10%;
-
-}
-
-.title{
-
-text-align:center;
-
-font-size:42px;
-
-margin-bottom:25px;
-
-color:#0B5D3B;
-
-}
-
-.text{
-
-max-width:900px;
-
-margin:auto;
-
-text-align:center;
-
-font-size:20px;
-
-line-height:1.8;
-
-}
-
-/* ================= ANIMATION ================= */
-
-@keyframes fadeUp{
-
-from{
-
-opacity:0;
-transform:translateY(40px);
-
-}
-
-to{
-
-opacity:1;
-transform:translateY(0);
-
-}
-
-}
-
-/* ================= MOBILE ================= */
-
-max-width:900px{
-
-.hero h1{
-
-font-size:42px;
-
-}
-
-.hero p{
-
-font-size:20px;
-
-}
-
-nav{
-
-display:none;
-
-}
-
-}
-
-    </style>
-
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
+<div class="container">
 
 <div class="logo">
-
-ПАРТИЯ НАРОДА
-
+🌿 Партия Народа
 </div>
 
 <nav>
 
-<a href="#">Главная</a>
-
-<a href="#">Манифест</a>
-
-<a href="#">Программа</a>
-
+<a href="index.html">Главная</a>
+<a href="manifest.html">Манифест</a>
+<a href="program.html">Программа</a>
 <a href="#">Новости</a>
-
-<a href="#">О нас</a>
-
-<a href="https://t.me/PeoplesParty22">Telegram</a>
+<a href="#">Контакты</a>
 
 </nav>
 
+</div>
 </header>
 
 <section class="hero">
 
-<div>
-
-<h1>ПАРТИЯ НАРОДА</h1>
+<h1>Свобода • Порядок • Будущее</h1>
 
 <p>
-
-Свобода • Порядок • Будущее
-
+Мы выступаем за сильное государство,
+уважение к правам граждан,
+развитие экономики,
+поддержку семьи,
+образования,
+науки и технологий.
 </p>
 
 <div class="buttons">
 
-<a class="btn green" href="#">Читать манифест</a>
+<a class="btn" href="manifest.html">
+Читать манифест
+</a>
 
-<a class="btn white" href="#">Наша программа</a>
-
-</div>
+<a class="btn2" href="program.html">
+Программа
+</a>
 
 </div>
 
 </section>
 
-<section>
+<section class="cards">
 
-<h2 class="title">
+<div class="card">
+<h2>Свобода</h2>
+<p>
+Защита прав человека,
+свободы слова
+и верховенства закона.
+</p>
+</div>
 
-О проекте
+<div class="card">
+<h2>Экономика</h2>
+<p>
+Поддержка бизнеса,
+конкуренции,
+новых технологий
+и рабочих мест.
+</p>
+</div>
 
-</h2>
+<div class="card">
+<h2>Будущее</h2>
+<p>
+Развитие науки,
+образования,
+медицины
+и современной России.
+</p>
+</div>
 
-<p class="text">
+</section>
 
-Партия народа — общественный проект, посвящённый обсуждению идей развития государства, прав человека, экономики, науки, образования и современных технологий.
+<footer>
 
-Мы стремимся к созданию общества, основанного на свободе, ответственности, уважении закона и возможностях для каждого человека.
+<p>© 2026 Партия Народа</p>
+
+<p>
+
+Telegram:
+
+<a href="https://t.me/PeoplesParty22">
+@PeoplesParty22
+</a>
 
 </p>
 
-</section>
+</footer>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
